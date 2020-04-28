@@ -2,6 +2,8 @@
 
 (Very) Minimal euclidean sequencer for Max and Max4Live.
 ***
+![ScreenShot](screenshot.jpeg)
+***
 
 ## description
 
@@ -30,6 +32,5 @@ The project has also a dependency to the [vx.ui.circularstep](https://github.com
 ## Warning
 This device is not production ready, with for sure some bugs... drop a line if you find annoying ones or have suggestions ! 
 
-![ScreenShot](screenshot.jpeg)
 
 
