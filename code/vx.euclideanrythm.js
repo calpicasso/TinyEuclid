@@ -1,3 +1,12 @@
+/* 
+	vx.euclidranrythm by Charles Al. Picasso
+	- Euclidean rythm using Bjorklund or standard algorithm
+
+	contains:
+	VxBjorlund class - bjorklund algorithm implementation as defined in Godfried Toussaint paper
+	VxEuclidean class - main class that supports another very simple algorithm
+*/
+
 //================================================================//
 // VxBjorklund algorithm class
 //================================================================//

@@ -16,7 +16,7 @@ Based on [The Euclidean Algorithm Generates Traditional Musical Rhythms](http://
 `TinyEuclid.amxd` : the final amxd file
 
 The `/code` folder contains :<br/>
-1. `vx.euclideanrythm.js`: javascript implementation of bjorklund algorithm and another (simpler) which produces a rotated version of the bjorklund. Other options are also available.<br/>
+1. `vx.euclideanrythm.js`: javascript implementation of the bjorklund algorithm (mainly to remain consistent with the rythms described by Godfried Toussaint and their notations) and another (faster | simpler) which produces a rotated version of the bjorklund. Other options are also available.<br/>
 2. `test_euclideanrythm.maxpat` : test patcher for the vx.euclideanrythm.js
 
 The project has also a dependency to the [vx.ui.circularstep](https://github.com/calpika/vx-ui-circularstep) for its main *euclidean* view.
@@ -27,7 +27,7 @@ The project has also a dependency to the [vx.ui.circularstep](https://github.com
 3. Create a Live project or open an existing one.<br/>
 4. Drag and drop the device in a MIDI track.<br/>
 5. Drop an instrument after the device in order to ear a sound
-6. (Tweek pitch, velocity, in the live.step view) press Play = the device should send the data to the instruments.
+6. (Tweek pitch, velocity, in the live.step view) press Play = the device should send the data to the instrument.
 
 ## Warning
 This device is not production ready, with for sure some bugs... drop a line if you find annoying ones or have suggestions ! 
