@@ -5,6 +5,24 @@
 ![ScreenShot](screenshot.jpeg)
 ***
 
+
+## Usage
+* **Pulses** (knob) : number of pulses in the sequence.
+* **Steps** (knob): number of steps in the sequence.
+* **Rotation** (knob) : how much do we rotate the list.
+* **Division** (menu) : set the note division for one step.
+* **Rythm presets** (led menu) : list of different rythm described by Godfried Toussaint in his papers.
+* **Presets** (store|recall on the right) : blue arrows will store at the corresponding index. the orange indexed buttons recall the preset. Up to 4 presets can be stored (for now). "Clear" will erase all presets. the leds on the right indicate if a preset is stored at this location.
+* **A | B** (tab): 
+	1. **B** uses bjorklund algorithm (to remain consistent with the notation)
+	2. **A** uses a basic algorithm (wich produces a rotated version of the bjorklund)
+<pre><code>this.k = numPulses;
+this.N = numSteps;
+var result = Array(this.N).fill(0);
+const div = this.N / this.k;
+for (var i = 0; i < this.k; ++i) result[ Math.round(i * div) ] = 1;
+</code></pre>
+
 ## description
 
 TinyEuclid is not intended to provide a robust device, it was first a prototype aimed at demonstrating the use of the [vx.ui.circularstep](https://github.com/calpika/vx-ui-circularstep) view.
