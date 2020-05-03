@@ -252,7 +252,7 @@ function pr_test_case_bjorklund(idx, obj, numPulses, numSteps, rotation, result)
 {
 	obj.k = numPulses;
 	obj.N = numSteps;
-	obj.rotation = rotation;
+	obj.R = rotation;
 	obj.algorithm = 'bjorklund';
 	
 	var ok = obj.generate() == result;
@@ -321,7 +321,7 @@ function list()
 	euclid.N = N;
 	
 	if (rotation !== undefined) 
-		euclid.rotation = rotation;
+		euclid.R = rotation;
 
 	euclid.generate();
 	last_sequence = euclid.toIntegers();
